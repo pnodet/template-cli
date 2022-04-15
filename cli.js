@@ -29,5 +29,7 @@ const cli = meow(
 		console.log('with --dry-run');
 	}
 
+	const spinner = ora('Loading unicorns').start();
 	console.log(cli.input);
+	spinner.succeed();
 })();
